@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PIa-Eg-uRw">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="uYO-rq-x0b">
+            <objects>
+                <viewController id="PIa-Eg-uRw" customClass="SplashScreenViewController" customModule="SimonSaysGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PfF-sZ-4nL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0e-zm-8MR">
+                                <rect key="frame" x="112.66666666666669" y="331" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="QiA-kq-lql"/>
+                                    <constraint firstAttribute="width" constant="150" id="dxK-oI-L4B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Play!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zKm-uF-vvY"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5O-bW-mUz">
+                                <rect key="frame" x="0.0" y="94" width="50" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ixM-bA-iqJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="r0B-sl-kSp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noo-QO-QRJ">
+                                <rect key="frame" x="325" y="207" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Mmi-qh-SyN"/>
+                                    <constraint firstAttribute="height" constant="50" id="rUq-zB-jqJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1d-wZ-J3e">
+                                <rect key="frame" x="0.0" y="531" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9rs-zQ-px2"/>
+                                    <constraint firstAttribute="height" constant="50" id="fPN-NJ-wNj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fr5-74-xmJ">
+                                <rect key="frame" x="325" y="645" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="gJs-e5-DZu"/>
+                                    <constraint firstAttribute="height" constant="50" id="m1S-kZ-Gxs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o5O-bW-mUz" firstAttribute="leading" secondItem="2jj-rQ-jFR" secondAttribute="leading" id="2oY-NU-jIg"/>
+                            <constraint firstItem="Fr5-74-xmJ" firstAttribute="top" secondItem="k1d-wZ-J3e" secondAttribute="bottom" constant="64" id="4OY-8H-8b9"/>
+                            <constraint firstItem="o5O-bW-mUz" firstAttribute="top" secondItem="2jj-rQ-jFR" secondAttribute="top" constant="50" id="6sn-ys-ie0"/>
+                            <constraint firstItem="Fr5-74-xmJ" firstAttribute="trailing" secondItem="2jj-rQ-jFR" secondAttribute="trailing" id="7hJ-7L-izP"/>
+                            <constraint firstItem="x0e-zm-8MR" firstAttribute="centerY" secondItem="PfF-sZ-4nL" secondAttribute="centerY" id="HZJ-sd-tPb"/>
+                            <constraint firstItem="x0e-zm-8MR" firstAttribute="top" secondItem="Noo-QO-QRJ" secondAttribute="bottom" constant="74" id="MEc-bw-VCH"/>
+                            <constraint firstItem="k1d-wZ-J3e" firstAttribute="leading" secondItem="2jj-rQ-jFR" secondAttribute="leading" id="Omi-bc-3vT"/>
+                            <constraint firstItem="Noo-QO-QRJ" firstAttribute="trailing" secondItem="2jj-rQ-jFR" secondAttribute="trailing" id="ZPl-zB-Pb5"/>
+                            <constraint firstItem="x0e-zm-8MR" firstAttribute="centerX" secondItem="PfF-sZ-4nL" secondAttribute="centerX" id="vFr-Ts-vsW"/>
+                            <constraint firstItem="k1d-wZ-J3e" firstAttribute="top" secondItem="x0e-zm-8MR" secondAttribute="bottom" constant="50" id="yI6-hb-E7x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2jj-rQ-jFR"/>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="Fr5-74-xmJ" id="jne-KL-ECm"/>
+                        <outlet property="greenView" destination="k1d-wZ-J3e" id="pJt-f2-cXC"/>
+                        <outlet property="playButton" destination="x0e-zm-8MR" id="tde-u3-EtM"/>
+                        <outlet property="redView" destination="o5O-bW-mUz" id="c4Y-sC-gzO"/>
+                        <outlet property="redViewLeftConstraint" destination="2oY-NU-jIg" id="cAB-Fc-M1Y"/>
+                        <outlet property="yellowView" destination="Noo-QO-QRJ" id="3pQ-Yz-0jC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhZ-HI-sqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-799" y="23"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
